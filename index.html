@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="Crescent Public School digital magazine — stories, creativity and campus life.">
+  <title>Crescent Public School | School Magazine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Crescent Public School magazine homepage"><span class="brand-mark">C</span><span>CRESCENT<span class="brand-sub">PUBLIC SCHOOL</span></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#magazine">Magazine</a><a href="#highlights">Highlights</a><a href="#about">About</a></nav>
+    <button class="top-cta" id="openReaderTop">Read the issue <span aria-hidden="true">↗</span></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> THE SCHOOL MAGAZINE · EXPLORE OUR WORLD</p>
+        <h1>Navigate through the pages<br><span>of knowledge and imagination.</span></h1>
+        <p class="hero-description">Explore our school magazine featuring messages, school news, student creativity, achievements, literature, science, sports and memorable moments from school life.</p>
+        <div class="hero-actions"><button class="button button-primary" id="openReaderHero">Open the magazine <span>→</span></button><a class="text-link" href="#highlights">Explore this issue <span>↓</span></a></div>
+        <div class="hero-stats"><div><strong>12</strong><span>Magazine sections</span></div><div><strong>2026</strong><span>School magazine</span></div><div><strong>∞</strong><span>Ideas to discover</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a colourful school magazine"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-spark spark-a">✳</div><div class="art-spark spark-b">✦</div><div class="art-card back-card"><span class="card-kicker">CRESCENT / 2026</span><div class="back-shapes"><i></i><i></i><i></i></div><span class="back-caption">Ideas in motion.</span></div><div class="art-card front-card"><span class="cover-tag">THE ANNUAL EDITION</span><div class="cover-title">THE<br><em>CRESCENT</em><br>CHRONICLE</div><div class="cover-illustration"><div class="sun"></div><div class="hill hill-one"></div><div class="hill hill-two"></div><div class="book-shape">✦</div></div><div class="cover-bottom"><span>LEARN · CREATE · INSPIRE</span><span>VOL. 01</span></div></div><div class="floating-pill"><span class="pill-icon">↗</span><span><b>Stories worth turning</b><small>One page at a time</small></span></div></div>
+      <div class="hero-bottom"><span>LEARNING BEYOND THE CLASSROOM</span><span>SCROLL TO DISCOVER <b>↓</b></span></div>
+    </section>
+
+    <section class="intro section-wrap" id="about"><div class="section-label">01 / OUR SCHOOL</div><div class="intro-content"><h2>Navigate through pages.<br><span>Discover new ideas.</span></h2><p>Welcome to the Crescent Public School Magazine — a place for the voices, imagination and achievements of our school community. Explore messages, news, student writing, science, sport and memories from school life.</p></div></section>
+
+    <section class="highlights section-wrap" id="highlights"><div class="section-heading"><div><div class="section-label">02 / INSIDE THE MAGAZINE</div><h2>Knowledge meets<br><span>imagination.</span></h2></div><p>Choose a topic and explore the stories, creativity and achievements that make our school community special.</p></div>
+      <div class="feature-grid reference-grid">
+        <article class="feature reference-card"><div class="reference-art tone-coral"><span class="art-number">01</span><span class="reference-emoji">✍️</span><span class="reference-word">IDEAS</span></div><div class="feature-info"><span class="feature-category">EDITORIAL</span><h3>Thoughts that inspire and guide</h3><p>Ideas and reflections that set the tone for the issue.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-yellow"><span class="art-number">02</span><span class="reference-emoji">🎓</span><span class="reference-word">VISION</span></div><div class="feature-info"><span class="feature-category">PRINCIPAL'S MESSAGE</span><h3>Leadership with vision and values</h3><p>A message of encouragement for every learner.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-teal"><span class="art-number">03</span><span class="reference-emoji">🏫</span><span class="reference-word">OUR HOME</span></div><div class="feature-info"><span class="feature-category">ABOUT SCHOOL</span><h3>Our history, mission and journey</h3><p>Discover the community and values behind our school.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-purple"><span class="art-number">04</span><span class="reference-emoji">📰</span><span class="reference-word">CAMPUS</span></div><div class="feature-info"><span class="feature-category">SCHOOL NEWS</span><h3>Latest events and announcements</h3><p>Updates, activities and happenings around school.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-blue"><span class="art-number">05</span><span class="reference-emoji">🏆</span><span class="reference-word">EXCELLENCE</span></div><div class="feature-info"><span class="feature-category">ACHIEVEMENTS</span><h3>Celebrating excellence</h3><p>Recognising effort, progress and proud milestones.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-peach"><span class="art-number">06</span><span class="reference-emoji">📚</span><span class="reference-word">STORIES</span></div><div class="feature-info"><span class="feature-category">SHORT STORIES</span><h3>Creative writing by students</h3><p>Fresh perspectives and imagined worlds from young writers.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-pink"><span class="art-number">07</span><span class="reference-emoji">🪶</span><span class="reference-word">POETRY</span></div><div class="feature-info"><span class="feature-category">POEMS</span><h3>Verses from young minds</h3><p>Feelings, observations and dreams shaped into words.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-mint"><span class="art-number">08</span><span class="reference-emoji">🔬</span><span class="reference-word">DISCOVERY</span></div><div class="feature-info"><span class="feature-category">SCIENCE & TECHNOLOGY</span><h3>Innovation and discovery</h3><p>Exploring questions, inventions and the world of tomorrow.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-green"><span class="art-number">09</span><span class="reference-emoji">🌱</span><span class="reference-word">NATURE</span></div><div class="feature-info"><span class="feature-category">ENVIRONMENT</span><h3>Caring for nature</h3><p>Small actions and big ideas for a greener planet.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-orange"><span class="art-number">10</span><span class="reference-emoji">⚽</span><span class="reference-word">TEAMWORK</span></div><div class="feature-info"><span class="feature-category">SPORTS</span><h3>Victory through teamwork</h3><p>Sportsmanship, dedication and the joy of playing together.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-lilac"><span class="art-number">11</span><span class="reference-emoji">📸</span><span class="reference-word">MEMORIES</span></div><div class="feature-info"><span class="feature-category">GALLERY</span><h3>Memories captured forever</h3><p>A visual celebration of events and everyday school life.</p></div></article>
+        <article class="feature reference-card"><div class="reference-art tone-navy"><span class="art-number">12</span><span class="reference-emoji">🌟</span><span class="reference-word">ALUMNI</span></div><div class="feature-info"><span class="feature-category">ALUMNI</span><h3>Stories from our proud alumni</h3><p>Journeys and experiences that inspire the next generation.</p></div></article>
+      </div>
+      <div class="quote-panel"><span class="quote-mark">“</span><blockquote>Education is the most powerful weapon which you can use to change the world.</blockquote><p>— Nelson Mandela</p></div>
+    </section>
+
+    <section class="reader-promo" id="magazine"><div class="promo-orb orb-left"></div><div class="promo-orb orb-right"></div><div class="promo-content"><div class="section-label light-label">03 / THE DIGITAL EDITION</div><h2>Turn the page.<br><em>Enter the story.</em></h2><p>Turn through the pages of our school magazine with an interactive digital reading experience. You can also open a PDF you have permission to use.</p><button class="button button-light" id="openReaderPromo">Start reading <span>→</span></button></div><div class="promo-stack"><div class="stack-page stack-back"></div><div class="stack-page stack-mid"></div><div class="stack-page stack-front"><span>CRESCENT</span><b>SCHOOL<br>MAGAZINE</b><small>ISSUE 01 · 2026</small><div class="stack-flower">✳</div></div></div></section>
+
+    <section class="upload-section section-wrap"><div class="upload-icon">↑</div><div><div class="section-label">MAKE IT YOUR EDITION</div><h2>Have a PDF magazine?</h2><p>Open your own PDF locally in the browser. Your document stays on your device and is not sent to an external service.</p></div><label class="button button-outline upload-button" for="pdfInput">Choose a PDF <span>＋</span></label><input id="pdfInput" type="file" accept="application/pdf,.pdf" hidden></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">C</span><span>CRESCENT<span class="brand-sub">PUBLIC SCHOOL</span></span></a><p>Navigate through the pages of knowledge and imagination. © <span id="year"></span> School Magazine.</p><a href="#home">Back to top ↑</a></footer>
+
+  <div class="reader" id="reader" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Digital magazine reader">
+    <div class="reader-top"><div class="reader-title"><span class="reader-mini-mark">C</span><span><b>CRESCENT PUBLIC SCHOOL MAGAZINE</b><small id="readerSubtitle">Digital issue · 2026</small></span></div><div class="reader-top-actions"><label class="reader-upload" for="readerPdfInput">Open PDF <span>＋</span></label><input id="readerPdfInput" type="file" accept="application/pdf,.pdf" hidden><button class="icon-button" id="fullscreenBtn" aria-label="Enter fullscreen" title="Fullscreen">⛶</button><button class="icon-button close-reader" id="closeReader" aria-label="Close reader" title="Close reader">×</button></div></div>
+    <div class="reader-main"><aside class="thumb-rail" id="thumbRail" aria-label="Page thumbnails"><div class="thumb-heading">PAGES</div><div id="thumbnails" class="thumbnails"></div></aside><div class="book-stage"><div class="book-status" id="bookStatus" role="status">Preparing your magazine…</div><div id="bookHost" class="book-host" aria-label="Interactive magazine pages"></div><div class="reader-error" id="readerError" hidden></div></div></div>
+    <div class="reader-controls"><div class="control-group"><button class="control-button" id="firstPage" aria-label="First page" title="First page">|‹</button><button class="control-button" id="prevPage" aria-label="Previous page" title="Previous page">‹</button><button class="control-button control-next" id="nextPage" aria-label="Next page" title="Next page">›</button><button class="control-button" id="lastPage" aria-label="Last page" title="Last page">›|</button></div><div class="page-count"><label for="goPage">PAGE</label><input id="goPage" type="number" min="1" value="1" aria-label="Go to page"><span>/ <b id="totalPages">8</b></span></div><div class="control-group right-controls"><button class="control-button" id="zoomOut" aria-label="Zoom out" title="Zoom out">−</button><span class="zoom-label" id="zoomLabel">100%</span><button class="control-button" id="zoomIn" aria-label="Zoom in" title="Zoom in">＋</button><button class="control-button" id="resetZoom" aria-label="Reset zoom" title="Reset zoom">↺</button><button class="control-button home-control" id="returnHome" aria-label="Return to homepage" title="Return to homepage">⌂</button></div></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
